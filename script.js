@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Ativa botões de reserva
-        const reserveButtons = document.querySelectorAll('a[href="#reservar"], button[onclick*="reserva"], .nav-actions .btn-gold, .hero-buttons .btn-gold');
+        const reserveButtons = document.querySelectorAll('a[href="#reservar"], button[onclick*="reserva"]');
         reserveButtons.forEach(btn => {
             btn.addEventListener('click', openModal);
         });

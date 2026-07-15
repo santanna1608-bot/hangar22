@@ -952,9 +952,11 @@ a {
 }
 
 .qr-code-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-qr-code {
@@ -963,6 +965,13 @@ a {
     border: 1px solid var(--color-border-gold);
     padding: 3px;
     background-color: #000;
+    transition: transform var(--transition-normal), border-color var(--transition-normal);
+    will-change: transform;
+}
+
+.qr-code-container:hover .footer-qr-code {
+    transform: scale(1.05);
+    border-color: var(--color-gold-main);
 }
 
 .qr-text {
@@ -974,6 +983,11 @@ a {
 .qr-text strong {
     color: var(--color-gold-main);
     display: block;
+    transition: color var(--transition-normal);
+}
+
+.qr-code-container:hover .qr-text strong {
+    color: var(--color-gold-bright);
 }
 
 /* Linha inferior de Copyright */
