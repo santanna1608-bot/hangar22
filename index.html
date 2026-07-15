@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hangar 23 - Churrascaria premium em Campo Grande, Rio de Janeiro. Saboreie os melhores cortes na brasa, hambúrgueres artesanais e frutos do mar em um ambiente luxuoso.">
+    <meta name="keywords" content="Churrascaria Campo Grande, Steakhouse Rio de Janeiro, Tomahawk, Picanha Premium, Hangar 23, Restaurante de Luxo Rio">
+    <title>Hangar 23 | Steakhouse & Bar Premium</title>
+    
+    <!-- Link para a biblioteca FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link para a folha de estilo customizada -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. CABEÇALHO (BARRA DE NAVEGAÇÃO) -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <!-- Logo & Nome (Esquerda) -->
+            <a href="#home" class="nav-logo-wrapper">
+                <img src="assets/logo.jpg" alt="Logo Hangar 23" class="nav-logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-main">HANGAR <span class="text-red">23</span></span>
+                    <span class="logo-sub">Steakhouse & Bar</span>
+                </div>
+            </a>
+
+            <!-- Links (Centro) -->
+            <div class="nav-links-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Botão de Reservas (Direita) -->
+            <div class="nav-actions">
+                <a href="#reservar" class="btn-gold">Reservas</a>
+            </div>
+
+            <!-- Menu Toggle (Visível apenas no mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. SEÇÃO HERO (BOAS-VINDAS) -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">UMA EXPERIÊNCIA GOURMET PREMIUM NO RIO</span>
+                <h1 class="hero-title">Bem-vindo ao Hangar <span class="text-red">23</span></h1>
+                <div class="hero-divider"></div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-gold">Ver Cardápio</a>
+                    <a href="#reservar" class="btn-outline">Reservar Mesa</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SEÇÃO NOSSOS PRATOS ESPECIAIS -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Cardápio Exclusivo</span>
+                    <h2 class="section-title">Nossos Pratos Especiais</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 1rem;">Experimente o Melhor da Nossa Cozinha Grelhada</p>
+                </div>
+
+                <div class="menu-grid reveal-group">
+                    <!-- Cartão 1: Tomahawk -->
+                    <article class="menu-card gold-frame reveal-item">
+                        <div class="menu-img-container">
+                            <img src="assets/tomahawk.png" alt="Bife Tomahawk Grelhado na Brasa" class="menu-img" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Tomahawk Premium</h3>
+                                <span class="menu-card-price">R$ 149</span>
+                            </div>
+                            <p class="menu-card-desc">Grelhado na brasa com Manteiga de Ervas e finalizado com flor de sal.</p>
+                            <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-gold menu-card-btn">Peça Agora</a>
+                        </div>
+                    </article>
+
+                    <!-- Cartão 2: Burger -->
+                    <article class="menu-card gold-frame reveal-item">
+                        <div class="menu-img-container">
+                            <img src="assets/burger.png" alt="Hambúrguer Artesanal Gourmet" class="menu-img" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Hangar Artisan Burger</h3>
+                                <span class="menu-card-price">R$ 54</span>
+                            </div>
+                            <p class="menu-card-desc">Carne 200g grelhada no fogo forte, Queijo Gruyère derretido, Cebola Caramelizada no brioche artesanal.</p>
+                            <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-gold menu-card-btn">Peça Agora</a>
+                        </div>
+                    </article>
+
+                    <!-- Cartão 3: Frutos do Mar -->
+                    <article class="menu-card gold-frame reveal-item">
+                        <div class="menu-img-container">
+                            <img src="assets/seafood.png" alt="Frutos do Mar Grelhados" class="menu-img" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Frutos do Mar na Brasa</h3>
+                                <span class="menu-card-price">R$ 189</span>
+                            </div>
+                            <p class="menu-card-desc">Cauda de Lagosta premium e Camarões selecionados grelhados com azeite de ervas e alho confitado.</p>
+                            <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-gold menu-card-btn">Peça Agora</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO OFERTAS (EXTRA PARA COMPLETAR A NAVEGAÇÃO DO MENU) -->
+        <section id="ofertas" class="about-section" style="background-color: #070708; border-top: 1px solid rgba(212, 175, 55, 0.05);">
+            <div class="container">
+                <div class="about-grid reveal-group" style="grid-template-columns: 1fr 1.2fr; direction: rtl;">
+                    <!-- Lado do Texto (escreva em LTR para corrigir direção do texto interno) -->
+                    <div class="about-content reveal-item" style="direction: ltr; padding-right: 0; padding-left: 2rem;">
+                        <div class="section-title-wrapper" style="text-align: left; margin-bottom: 2rem;">
+                            <span class="section-subtitle">Momento Especial</span>
+                            <h2 class="section-title">Ofertas Exclusivas</h2>
+                        </div>
+                        <h3 style="font-family: var(--font-serif); color: var(--color-gold-main); font-size: 1.5rem; margin-bottom: 1rem; font-weight: 400;">
+                            Happy Hour & Seleção de Vinhos
+                        </h3>
+                        <p class="about-text" style="margin-bottom: 1.5rem;">
+                            De Terça a Sexta-feira, das 17h às 20h, aproveite nossa carta de drinks autorais e chopes artesanais com 50% de desconto. Na compra de qualquer corte Premium da linha 'Gold Choice', a primeira garrafa de vinho da nossa adega exclusiva sai com 20% OFF.
+                        </p>
+                        <p class="about-text" style="margin-bottom: 2rem;">
+                            Venha brindar a vida em um ambiente sofisticado com o melhor do churrasco premium do Rio de Janeiro.
+                        </p>
+                        <a href="#reservar" class="btn-gold">Reservar Mesa</a>
+                    </div>
+                    <!-- Lado da Imagem -->
+                    <div class="about-img-container reveal-item" style="direction: ltr;">
+                        <div class="about-img-frame gold-frame">
+                            <img src="assets/couple_rating.png" alt="Casal jantando e brindando na churrascaria" class="about-img" loading="lazy">
+                        </div>
+                        <div class="about-glow" style="bottom: auto; top: -30px; right: auto; left: -30px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO NOSSA HISTÓRIA (SOBRE NÓS) -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="about-grid reveal-group">
+                    <!-- Lado do Texto -->
+                    <div class="about-content reveal-item">
+                        <div class="section-title-wrapper">
+                            <span class="section-subtitle">Descubra Nossa História</span>
+                            <h2 class="section-title">Ambiente Sofisticado e Sabores Autênticos</h2>
+                        </div>
+                        <p class="about-text">
+                            Uma experiência gastronômica única onde a tradição da grelha encontra a sofisticação. Venha viver momentos inesquecíveis em Campo Grande, Rio de Janeiro.
+                        </p>
+                        <p class="about-text" style="font-size: 0.95rem; line-height: 1.6; margin-top: -1rem;">
+                            Nascido do amor pelo churrasco clássico, o Hangar 23 une carnes nobres de linhagem britânica, selecionadas rigorosamente e maturadas com maestria, a um ambiente intimista planejado para quem valoriza a verdadeira alta gastronomia.
+                        </p>
+                        <a href="#menu" class="btn-outline">Ver Cardápio</a>
+                    </div>
+                    
+                    <!-- Lado da Imagem -->
+                    <div class="about-img-container reveal-item">
+                        <div class="about-img-frame gold-frame">
+                            <img src="assets/history_wine.png" alt="Taças de vinho vazias com velas acesas no restaurante Hangar 23" class="about-img" loading="lazy">
+                        </div>
+                        <div class="about-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SEÇÃO AVALIAÇÕES -->
+        <section id="avaliacoes" class="reviews-section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Depoimentos</span>
+                    <h2 class="section-title">Avaliações dos Clientes</h2>
+                </div>
+
+                <div class="review-container reveal-group">
+                    <div class="review-card-frame gold-frame reveal-item">
+                        <div class="review-card">
+                            <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+                            
+                            <div class="review-img-wrapper">
+                                <img src="assets/couple_rating.png" alt="Foto de perfil de Carlos e Sofia" class="review-avatar" loading="lazy">
+                            </div>
+                            
+                            <h3 class="review-author">Carlos e Sofia</h3>
+                            
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                            <blockquote class="review-text">
+                                "Absolutamente fantástico! A carne é divina, o ambiente é impecável e o atendimento é nota 10. Uma experiência obrigatória no Rio!"
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. RODAPÉ (FOOTER) -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-grid reveal-group">
+                <!-- Coluna 1: Identidade da Marca -->
+                <div class="footer-col footer-brand-col reveal-item">
+                    <a href="#home" class="footer-logo-wrapper">
+                        <img src="assets/logo.jpg" alt="Logo Hangar 23" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-main">HANGAR <span class="text-red">23</span></span>
+                            <span class="footer-logo-sub">Steakhouse & Bar</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        A verdadeira experiência do churrasco premium grelhado na brasa em Campo Grande, Rio de Janeiro.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Horário de Funcionamento -->
+                <div class="footer-col reveal-item">
+                    <h4 class="footer-col-title">Funcionamento</h4>
+                    <ul class="footer-text" style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li>
+                            <strong style="color: var(--color-gold-main); display: block;">Segunda a Sexta:</strong>
+                            12:00 PM - 10:00 PM
+                        </li>
+                        <li>
+                            <strong style="color: var(--color-gold-main); display: block;">Sábado e Domingo:</strong>
+                            1:00 PM - 11:00 PM
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Links Rápidos -->
+                <div class="footer-col reveal-item">
+                    <h4 class="footer-col-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#menu">Cardápio Digital</a></li>
+                        <li><a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer">iFood Delivery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato -->
+                <div class="footer-col reveal-item">
+                    <h4 class="footer-col-title">Contato</h4>
+                    <div class="footer-contact">
+                        <p><i class="fa-solid fa-location-dot"></i> Campo Grande, Rio de Janeiro - RJ</p>
+                        <p><i class="fa-solid fa-phone"></i> +55 21 9876-5432</p>
+                        <p><i class="fa-solid fa-envelope"></i> contato@hangar23.com.br</p>
+                    </div>
+                </div>
+
+                <!-- Coluna 5: Redes Sociais e QR Code -->
+                <div class="footer-col reveal-item">
+                    <h4 class="footer-col-title">Conecte-se</h4>
+                    <div class="footer-social-wrapper">
+                        <!-- Ícones de Redes Sociais -->
+                        <div class="social-icons">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="social-icon-btn ifood-btn" aria-label="iFood" style="font-weight: bold; font-family: sans-serif; font-size: 0.75rem;">iFood</a>
+                        </div>
+                        
+                        <!-- QR Code Container -->
+                        <div class="qr-code-container">
+                            <img src="assets/qr_code.png" alt="QR Code para Cardápio Digital" class="footer-qr-code">
+                            <p class="qr-text">
+                                <strong>Cardápio Digital</strong>
+                                Escaneie para acessar no celular.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divisória inferior e Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hangar 23 Steakhouse & Bar. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Interação -->
+    <script src="script.js"></script>
+</body>
+</html>
