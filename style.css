@@ -644,6 +644,20 @@ a {
     align-items: center;
 }
 
+.about-grid.reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.about-grid.reverse > .about-content {
+    order: 2;
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+.about-grid.reverse > .about-img-container {
+    order: 1;
+}
+
 .about-content {
     padding-right: 1.5rem;
 }
@@ -1106,6 +1120,19 @@ a {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3.5rem;
+    }
+
+    .about-grid.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid.reverse > .about-content {
+        order: initial;
+        padding-left: 0;
+    }
+
+    .about-grid.reverse > .about-img-container {
+        order: initial;
     }
     
     .about-content {
